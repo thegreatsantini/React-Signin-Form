@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Transition from 'react-transition-group/Transition';
+import Transition from 'react-addons-css-transition-group';
 import "./App.css";
 
 const Modal = props => {
@@ -21,13 +21,13 @@ const Input = props => {
   return (
     <div className="Input">
       <input
-        id={this.props.name}
+        id={props.name}
         autoComplete="false"
         required
-        type={this.props.type}
-        placeholder={this.props.placeholder}
+        type={props.type}
+        placeholder={props.placeholder}
       />
-      <label htmlFor={this.props.name} />
+      <label htmlFor={props.name} />
     </div>
   );
 };
